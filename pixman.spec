@@ -2,8 +2,8 @@
 %define gitrev 8ff7213f39edc1b2b8b60d6b0cc5d5f14ca1928d
 
 Name:           pixman
-Version:        0.16.6
-Release:        1%{?dist}
+Version:        0.18.4
+Release:        1%{?dist}.1
 Summary:        Pixel manipulation library
 
 Group:          System Environment/Libraries
@@ -61,6 +61,15 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/pixman-1.pc
 
 %changelog
+* Tue Oct 19 2010 Soren Sandmann <ssp@redhat.com> - 0.18.4-2-el6_1.1
+- Use the recommended nvr scheme for z streams.
+
+* Tue Oct 19 2010 Soren Sandmann <ssp@redhat.com> - 0.18.4-2
+- Bump revision number.
+
+* Tue Oct 19 2010 Soren Sandmann <ssp@redhat.com> - 0.18.4-1
+- Rebase to 0.18.4
+
 * Mon Feb 8 2010 Soren Sandmann <ssp@redhat.com> - 0.16.6-1
 - Update to 0.16.6
 
